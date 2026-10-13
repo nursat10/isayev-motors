@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title data-i18n="page.title"
+      >IsaevMotors — доставка авто из Кореи, Дубая, Китая, Японии и США</title
+    >
+    <!-- Добавьте путь к favicon при необходимости. -->
+    <meta
+      name="description"
+      content="IsaevMotors — подбор и доставка автомобилей из Кореи, ОАЭ (Дубая), Китая, Японии и США в Казахстан и Россию. Проверка, покупка и оформление под ключ."
+      data-i18n-content="page.description"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+       ШАПКА И НАВИГАЦИЯ
+       ========================================================= -->
+    <header>
+      <div class="nav">
+        <a
+          href="#home"
+          class="wordmark"
+          aria-label="IsaevMotors — на главную"
+          data-i18n-aria-label="a11y.home"
+        >
+          <span class="brand-text">Isaev<span>Motors</span></span>
+        </a>
+
+        <nav
+          class="nav-links"
+          aria-label="Основная навигация"
+          data-i18n-aria-label="a11y.navigation"
+        >
+          <a href="#how" data-i18n="nav.process">Этапы работы</a>
+          <a href="#deliveries" data-i18n="nav.deliveries">Доставки</a>
+          <a href="#about" data-i18n="nav.about">О компании</a>
+          <a href="#contact" data-i18n="nav.contact">Контакты</a>
+        </nav>
+
+        <div class="header-actions">
+          <div
+            class="language-switch"
+            role="group"
+            aria-label="Язык сайта"
+            data-i18n-aria-label="language.label"
+            ><button
+              type="button"
+              class="language-button"
+              data-language="ru"
+              lang="ru"
+              aria-label="Русский"
+              aria-pressed="true"
+              >RU</button
+            ><button
+              type="button"
+              class="language-button"
+              data-language="kk"
+              lang="kk"
+              aria-label="Қазақша"
+              aria-pressed="false"
+              >KZ</button
+            ><button
+              type="button"
+              class="language-button"
+              data-language="en"
+              lang="en"
+              aria-label="English"
+              aria-pressed="false"
+              >EN</button
+            ></div
+          >
+          <select
+            class="language-select"
+            aria-label="Язык сайта"
+            data-i18n-aria-label="language.label"
+            ><option value="ru" lang="ru">RU — Русский</option
+            ><option value="kk" lang="kk">KZ — Қазақша</option
+            ><option value="en" lang="en">EN — English</option></select
+          >
+          <a href="#contact" class="nav-cta" data-i18n="nav.request"
+            >Оставить заявку</a
+          >
+
+          <button
+            class="burger"
+            id="burgerBtn"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            data-i18n-aria-label="menu.open"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+       МОБИЛЬНОЕ МЕНЮ
+       ========================================================= -->
+    <nav
+      class="mobile-menu"
+      id="mobileMenu"
+      aria-label="Мобильная навигация"
+      inert
+      data-i18n-aria-label="a11y.mobileNavigation"
+    >
+      <a href="#how" data-i18n="nav.process">Этапы работы</a>
+      <a href="#deliveries" data-i18n="nav.deliveries">Доставки</a>
+      <a href="#about" data-i18n="nav.about">О компании</a>
+      <a href="#contact" data-i18n="nav.contact">Контакты</a>
+      <a href="#contact" class="btn-primary" data-i18n="nav.request"
+        >Оставить заявку</a
+      >
+      <div class="mobile-language"
+        ><span data-i18n="language.label">Язык сайта</span
+        ><div
+          class="language-switch"
+          role="group"
+          aria-label="Язык сайта"
+          data-i18n-aria-label="language.label"
+          ><button
+            type="button"
+            class="language-button"
+            data-language="ru"
+            lang="ru"
+            aria-label="Русский"
+            aria-pressed="true"
+            >RU</button
+          ><button
+            type="button"
+            class="language-button"
+            data-language="kk"
+            lang="kk"
+            aria-label="Қазақша"
+            aria-pressed="false"
+            >KZ</button
+          ><button
+            type="button"
+            class="language-button"
+            data-language="en"
+            lang="en"
+            aria-label="English"
+            aria-pressed="false"
+            >EN</button
+          ></div
+        ></div
+      >
+    </nav>
+
+    <!-- =========================================================
+       ПЕРВЫЙ ЭКРАН
+       ========================================================= -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <div class="hero-eyebrow-note" data-i18n="hero.eyebrow"
+            >МЕЖДУНАРОДНАЯ ДОСТАВКА АВТО</div
+          >
+
+          <h1 data-i18n-html="hero.title"
+            >Автомобиль<br />из-за рубежа.<br /><em>Под ключ.</em></h1
+          >
+
+          <p class="lead" data-i18n="hero.description">
+            Подбираем, проверяем, выкупаем и доставляем автомобили из Кореи, ОАЭ
+            (Дубая), Китая, Японии и США в Казахстан и Россию. Согласовываем
+            бюджет, маршрут и документы до покупки.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#contact" class="btn-primary"
+              ><span data-i18n="action.estimate">Рассчитать стоимость</span>
+              <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+
+        <div class="hero-visual"
+          ><img
+            class="hero-brand"
+            src=""
+            alt="Автомобиль"
+            data-i18n-alt="message.car"
+          /><div class="hero-art" aria-hidden="true"
+            ><span class="hero-watermark">GLOBAL.</span
+            ><svg
+              viewBox="0 0 900 410"
+              fill="none"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  id="paint"
+                  x1="430"
+                  y1="100"
+                  x2="450"
+                  y2="320"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#8b94a3" />
+                  <stop offset=".22" stop-color="#3f4856" />
+                  <stop offset=".62" stop-color="#252d39" />
+                  <stop offset="1" stop-color="#101720" />
+                </linearGradient>
+                <linearGradient
+                  id="glass"
+                  x1="480"
+                  y1="140"
+                  x2="510"
+                  y2="234"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#263445" />
+                  <stop offset="1" stop-color="#0b1019" />
+                </linearGradient>
+              </defs>
+              <ellipse
+                cx="463"
+                cy="343"
+                rx="355"
+                ry="17"
+                fill="#090c11"
+                opacity=".65"
+              />
+              <path
+                d="M86 292 98 244 172 226 266 164Q285 150 340 149H500Q546 151 611 219L734 236Q780 242 811 272L819 310 792 324 106 324 79 311Z"
+                fill="url(#paint)"
+                stroke="#929bad"
+                stroke-width="1.2"
+              />
+              <path
+                d="m197 225 82-58q17-10 62-10h148q48 1 104 66Z"
+                fill="url(#glass)"
+                stroke="#939cac"
+                stroke-width="1.1"
+              />
+              <path
+                d="m351 157-16 68M486 157l34 68"
+                stroke="#6f7a8e"
+                stroke-width="4"
+              />
+              <path
+                d="m100 253 180-19 319-1 128 17M347 235l-3 75M603 235l23 62"
+                stroke="#bcc3cf"
+                stroke-opacity=".2"
+              />
+              <path d="m101 276 117-7 11-15-126 8Z" fill="#d5dce7" />
+              <path d="m735 254 56 12 10 11-80-5Z" fill="#ef2637" />
+              <path
+                d="m91 302 102-5M743 306l69-8"
+                stroke="#768194"
+                stroke-width="2"
+              />
+              <path
+                d="m421 246 26 0m89 0h23"
+                stroke="#8e98a8"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="m133 325q-2-74 66-77 70 0 72 77m335 0q-3-76 64-78 72 0 75 78"
+                fill="#10151e"
+              />
+              <circle
+                cx="201"
+                cy="312"
+                r="48"
+                fill="#0a0d14"
+                stroke="#303a4b"
+                stroke-width="6"
+              />
+              <circle
+                cx="201"
+                cy="312"
+                r="31"
+                fill="#364152"
+                stroke="#a7b0be"
+                stroke-width="2"
+              />
+              <path
+                d="m201 282v60m-30-30h60m-51-21 42 42m-42 0 42-42"
+                stroke="#8b95a6"
+                stroke-width="3"
+              />
+              <circle cx="201" cy="312" r="9" fill="#1c2636" />
+              <circle
+                cx="675"
+                cy="312"
+                r="48"
+                fill="#0a0d14"
+                stroke="#303a4b"
+                stroke-width="6"
+              />
+              <circle
+                cx="675"
+                cy="312"
+                r="31"
+                fill="#364152"
+                stroke="#a7b0be"
+                stroke-width="2"
+              />
+              <path
+                d="m675 282v60m-30-30h60m-51-21 42 42m-42 0 42-42"
+                stroke="#8b95a6"
+                stroke-width="3"
+              />
+              <circle cx="675" cy="312" r="9" fill="#1c2636" />
+              <path d="M269 320h337" stroke="#ef2637" stroke-width="2" />
+              <path
+                d="m571 223 15-12 25 4 3 14"
+                fill="#283240"
+                stroke="#7d899c"
+              /></svg></div
+          ><div class="hero-country"
+            ><strong>KR · AE · CN · JP · US</strong> <span>→</span>
+            <strong>KZ / RU</strong></div
+          ><span class="hero-corner" aria-hidden="true">↗</span
+          ><div class="visual-label"
+            ><span data-i18n="hero.brandCaption">ISAEVMOTORS / ИМПОРТ АВТО</span
+            ><b data-i18n-html="hero.caption"
+              >Ваш выбор.<br />Наше сопровождение.</b
+            ></div
+          ></div
+        >
+      </div>
+      <div class="wrap route-wrap"
+        ><div class="route-panel">
+          <div class="cap" data-i18n="route.label">Откуда привозим</div
+          ><div class="route-points"
+            ><div
+              class="route-origins"
+              aria-label="Страны и города отправления"
+              data-i18n-aria-label="a11y.origins"
+              ><span class="origin-chip" data-i18n="country.korea">Корея</span
+              ><span class="origin-chip" data-i18n="country.dubaiChip"
+                >ОАЭ · Дубай</span
+              ><span class="origin-chip" data-i18n="country.china">Китай</span
+              ><span class="origin-chip" data-i18n="country.japan">Япония</span
+              ><span class="origin-chip" data-i18n="country.usa">США</span></div
+            ><span class="route-arrow" aria-hidden="true">→</span
+            ><strong class="route-destination" data-i18n="route.destination"
+              >Казахстан / Россия</strong
+            ></div
+          >
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="wrap">
+          <div class="stat">
+            <div class="stat-num" data-i18n="stat.selection">Подбор</div>
+            <div class="stat-label" data-i18n="stat.selectionText"
+              >под ваш бюджет и требования</div
+            >
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-i18n="stat.inspection">Проверка</div>
+            <div class="stat-label" data-i18n="stat.inspectionText"
+              >до согласования покупки</div
+            >
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-i18n="stat.shipping">Доставка</div>
+            <div class="stat-label" data-i18n="stat.shippingText"
+              >с сопровождением документов</div
+            >
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-i18n="stat.turnkey">Под ключ</div>
+            <div class="stat-label" data-i18n="stat.turnkeyText"
+              >от заявки до передачи ключей</div
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       УСЛУГИ
+       ========================================================= -->
+    <section class="services section-pad" id="services"
+      ><div class="wrap"
+        ><div class="section-top"
+          ><div
+            ><div class="eyebrow" data-i18n="services.eyebrow"
+              >01 / НАШИ УСЛУГИ</div
+            ><h2 data-i18n-html="services.title"
+              >Весь путь —<br />в одних руках.</h2
+            ></div
+          ><p data-i18n="services.description"
+            >От поиска подходящего автомобиля до доставки. Вы согласовываете
+            решения, мы сопровождаем каждый этап.</p
+          ></div
+        ><div class="service-grid"
+          ><article
+            ><span class="service-no">01</span
+            ><h3 data-i18n="services.selection">Подбор автомобиля</h3
+            ><p data-i18n="services.selectionText"
+              >Ищем модель по вашему бюджету, комплектации и пожеланиям.
+              Сравниваем предложения продавцов и площадок в выбранной стране.</p
+            ></article
+          ><article
+            ><span class="service-no">02</span
+            ><h3 data-i18n="services.inspection">Проверка и покупка</h3
+            ><p data-i18n="services.inspectionText"
+              >Осмотр, история автомобиля и отчёт перед выкупом. Покупка после
+              согласования с вами.</p
+            ></article
+          ><article
+            ><span class="service-no">03</span
+            ><h3 data-i18n="services.delivery">Доставка под ключ</h3
+            ><p data-i18n="services.deliveryText"
+              >Организация перевозки, таможенное оформление и документы. Маршрут
+              и сроки согласовываем по заказу.</p
+            ></article
+          ></div
+        ></div
+      ></section
+    >
+
+    <!-- =========================================================
+       ЭТАПЫ РАБОТЫ
+       ========================================================= -->
+    <section class="how section-pad" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow" data-i18n="process.eyebrow"
+            >02 / ЭТАПЫ РАБОТЫ</div
+          ><h2 data-i18n-html="process.title"
+            >От вашего запроса<br />до ваших ключей.</h2
+          >
+          <p data-i18n="process.description">
+            Процесс построен так, чтобы вы видели автомобиль и цену на каждом
+            этапе — до того, как деньги уходят продавцу.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <h3 data-i18n="process.request">Заявка на подбор</h3>
+            <p data-i18n="process.requestText"
+              >Марка, модель, год, бюджет и комплектация — мы формируем критерии
+              поиска.</p
+            >
+          </div>
+
+          <div class="step">
+            <div class="step-num">02</div>
+            <h3 data-i18n="process.selection">Подбор за рубежом</h3>
+            <p data-i18n="process.selectionText"
+              >Ищем варианты на площадках и у продавцов в Корее, ОАЭ, Китае,
+              Японии или США. Согласовываем подходящий автомобиль.</p
+            >
+          </div>
+
+          <div class="step">
+            <div class="step-num">03</div>
+            <h3 data-i18n="process.inspection">Осмотр и выкуп</h3>
+            <p data-i18n="process.inspectionText"
+              >Независимая диагностика перед покупкой. Выкупаем только после
+              вашего подтверждения.</p
+            >
+          </div>
+
+          <div class="step">
+            <div class="step-num">04</div>
+            <h3 data-i18n="process.shipping">Международная доставка</h3>
+            <p data-i18n="process.shippingText"
+              >Организуем морскую и/или наземную перевозку в зависимости от
+              страны отправления. Маршрут и сроки согласовываем по заказу.</p
+            >
+          </div>
+
+          <div class="step">
+            <div class="step-num">05</div>
+            <h3 data-i18n="process.handover">Растаможка и выдача</h3>
+            <p data-i18n="process.handoverText"
+              >Сопровождаем таможенное оформление и подготовку документов.
+              Передаём автомобиль в согласованном месте.</p
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       ЗАВЕРШЁННЫЕ ДОСТАВКИ
+       ========================================================= -->
+    <section
+      class="deliveries section-pad"
+      id="deliveries"
+      aria-labelledby="deliveriesTitle"
+      ><div class="wrap">
+        <div class="section-top"
+          ><div
+            ><div class="eyebrow" data-i18n="deliveries.eyebrow"
+              >03 / ИСТОРИИ ДОСТАВОК</div
+            ><h2 id="deliveriesTitle" data-i18n-html="deliveries.title"
+              >Завершённые<br />доставки.</h2
+            ></div
+          ><p data-i18n="deliveries.description"
+            >От выбора автомобиля за рубежом до передачи ключей владельцу.
+            Истории доставок готовятся к публикации.</p
+          ></div
+        >
+        <div
+          class="deliveries-grid"
+          id="deliveryGallery"
+          tabindex="0"
+          aria-label="Истории доставок — листайте влево и вправо"
+          data-i18n-aria-label="a11y.gallery"
+        >
+          <!-- Карточка 1: вставьте ссылку Reels в DELIVERY_REELS в instagram.js. Ниже заполните сведения о доставке. -->
+          <article class="delivery-card">
+            <div class="delivery-reel" data-reel-slot>
+              <div class="delivery-reel-placeholder">
+                <span class="delivery-reel-brand">Instagram Reels</span>
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <rect
+                    x="9"
+                    y="3"
+                    width="30"
+                    height="42"
+                    rx="8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path d="m20 16 12 8-12 8V16Z" fill="currentColor" />
+                </svg>
+                <strong data-i18n="deliveries.reel">Видео доставки</strong>
+                <p data-i18n="deliveries.reelSoon"
+                  >Скоро здесь появится видео выдачи автомобиля</p
+                >
+              </div>
+            </div>
+            <a
+              class="delivery-reel-link"
+              hidden
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="deliveries.openReel"
+              >Смотреть в Instagram ↗</a
+            >
+            <div class="delivery-body"
+              ><div class="delivery-number" data-i18n="deliveries.story1"
+                >ИСТОРИЯ / 01</div
+              ><h3 data-i18n="deliveries.storyTitle">История доставки</h3>
+              <dl class="delivery-facts"
+                ><div
+                  ><dt data-i18n="deliveries.origin">Страна покупки</dt
+                  ><dd>—</dd></div
+                ><div
+                  ><dt data-i18n="deliveries.city">Город выдачи</dt
+                  ><dd>—</dd></div
+                ><div
+                  ><dt data-i18n="deliveries.time">Срок доставки</dt
+                  ><dd>—</dd></div
+                ><div
+                  ><dt data-i18n="deliveries.cost">Итоговая стоимость</dt
+                  ><dd>—</dd></div
+                ></dl
+              >
+              <!-- При наличии добавьте подлинный отзыв клиента и удалите атрибут hidden. -->
+              <blockquote class="delivery-review" hidden></blockquote>
+            </div>
+          </article>
+          <!-- Карточка 2: вставьте ссылку Reels в DELIVERY_REELS в instagram.js. Ниже заполните сведения о доставке. -->
+          <article class="delivery-card">
+            <div class="delivery-reel" data-reel-slot>
+              <div class="delivery-reel-placeholder">
+                <span class="delivery-reel-brand">Instagram Reels</span>
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <rect
+                    x="9"
+                    y="3"
+                    width="30"
+                    height="42"
+                    rx="8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path d="m20 16 12 8-12 8V16Z" fill="currentColor" />
+                </svg>
+                <strong data-i18n="deliveries.reel">Видео доставки</strong>
+                <p data-i18n="deliveries.reelSoon"
+                  >Скоро здесь появится видео выдачи автомобиля</p
+                >
+              </div>
+            </div>
+            <a
+              class="delivery-reel-link"
+              hidden
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="deliveries.openReel"
+              >Смотреть в Instagram ↗</a
+            >
+            <div class="delivery-body"
+              ><div class="delivery-number" data-i18n="deliveries.story2"
+                >ИСТОРИЯ / 02</div
+              ><h3 data-i18n="deliveries.storyTitle">История доставки</h3>
+              <dl class="delivery-facts"
+                ><div
+                  ><dt data-i18n="deliveries.origin">Страна покупки</dt
+                  ><dd>—</dd></div
+                ><div
+                  ><dt data-i18n="deliveries.city">Город выдачи</dt
+                  ><dd>—</dd></div
+                ><div
+                  ><dt data-i18n="deliveries.time">Срок доставки</dt
+                  ><dd>—</dd></div
+                ><div
+                  ><dt data-i18n="deliveries.cost">Итоговая стоимость</dt
+                  ><dd>—</dd></div
+                ></dl
+              >
+              <!-- При наличии добавьте подлинный отзыв клиента и удалите атрибут hidden. -->
+              <blockquote class="delivery-review" hidden></blockquote>
+            </div>
+          </article>
+          <!-- Карточка 3: вставьте ссылку Reels в DELIVERY_REELS в instagram.js. Ниже заполните сведения о доставке. -->
+          <article class="delivery-card">
+            <div class="delivery-reel" data-reel-slot>
+              <div class="delivery-reel-placeholder">
+                <span class="delivery-reel-brand">Instagram Reels</span>
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <rect
+                    x="9"
+                    y="3"
+                    width="30"
+                    height="42"
+                    rx="8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path d="m20 16 12 8-12 8V16Z" fill="currentColor" />
+                </svg>
+                <strong data-i18n="deliveries.reel">Видео доставки</strong>
+                <p data-i18n="deliveries.reelSoon"
+                  >Скоро здесь появится видео выдачи автомобиля</p
+                >
+              </div>
+            </div>
+            <a
+              class="delivery-reel-link"
+              hidden
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="deliveries.openReel"
+              >Смотреть в Instagram ↗</a
+            >
+            <div class="delivery-body"
+              ><div class="delivery-number" data-i18n="deliveries.story3"
+                >ИСТОРИЯ / 03</div
+              ><h3 data-i18n="deliveries.storyTitle">История доставки</h3>
+              <dl class="delivery-facts"
+                ><div
+                  ><dt data-i18n="deliveries.origin">Страна покупки</dt
+                  ><dd>—</dd></div
+                ><div
+                  ><dt data-i18n="deliveries.city">Город выдачи</dt
+                  ><dd>—</dd></div
+                ><div
+                  ><dt data-i18n="deliveries.time">Срок доставки</dt
+                  ><dd>—</dd></div
+                ><div
+                  ><dt data-i18n="deliveries.cost">Итоговая стоимость</dt
+                  ><dd>—</dd></div
+                ></dl
+              >
+              <!-- При наличии добавьте подлинный отзыв клиента и удалите атрибут hidden. -->
+              <blockquote class="delivery-review" hidden></blockquote>
+            </div>
+          </article>
+        </div>
+        <div class="delivery-controls"
+          ><span
+            class="delivery-position"
+            id="deliveryPosition"
+            aria-live="polite"
+            >1 / 3</span
+          ><div class="delivery-control-buttons"
+            ><button
+              class="delivery-control"
+              id="deliveryPrev"
+              type="button"
+              aria-label="Предыдущая доставка"
+              aria-controls="deliveryGallery"
+              disabled
+              data-i18n-aria-label="a11y.previous"
+              >←</button
+            ><button
+              class="delivery-control"
+              id="deliveryNext"
+              type="button"
+              aria-label="Следующая доставка"
+              aria-controls="deliveryGallery"
+              data-i18n-aria-label="a11y.next"
+              >→</button
+            ></div
+          ></div
+        >
+      </div></section
+    >
+
+    <!-- =========================================================
+       О КОМПАНИИ
+       ========================================================= -->
+    <section class="about section-pad" id="about"
+      ><div class="wrap about-grid"
+        ><div class="about-brand"
+          ><img
+            src="IMG.PNG"
+            alt="Логотип IsaevMotors"
+            loading="lazy"
+            data-i18n-alt="a11y.logo"
+          /><div class="about-fallback"
+            ><small data-i18n="about.tagline">ПО ВСЕМУ МИРУ. С ЗАБОТОЙ.</small
+            ><strong>Isaev<span>Motors</span></strong
+            ><p data-i18n-html="about.motto"
+              >Работаем добросовестно<br />и прозрачно.</p
+            ></div
+          ></div
+        ><div
+          ><div class="eyebrow" data-i18n="about.eyebrow">О КОМПАНИИ</div
+          ><h2 data-i18n-html="about.title"
+            >Больше ясности.<br />Меньше хлопот.</h2
+          ><p data-i18n="about.description"
+            >Занимаемся подбором и доставкой автомобилей из Кореи, ОАЭ (Дубая),
+            Китая, Японии и США в Казахстан и Россию. Помогаем пройти весь
+            процесс: от выбора модели и страны покупки до оформления и передачи
+            автомобиля.</p
+          ><p data-i18n="about.approach"
+            >Понятные условия, согласование покупки и связь на каждом этапе —
+            основа нашего подхода.</p
+          ></div
+        ></div
+      ></section
+    >
+
+    <!-- =========================================================
+       ПРЕИМУЩЕСТВА
+       ========================================================= -->
+    <section class="why section-pad" id="why">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="why.title">Почему выбирают IsaevMotors</h2>
+          <p data-i18n="why.description"
+            >Проверка автомобиля, понятные расходы и сопровождение на каждом
+            этапе международной доставки.</p
+          >
+        </div>
+
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-mark">01</div>
+            <div>
+              <h3 data-i18n="why.origins">Пять направлений подбора</h3>
+              <p data-i18n="why.originsText"
+                >Сравниваем варианты в Корее, ОАЭ, Китае, Японии и США, чтобы
+                найти автомобиль под ваш запрос.</p
+              >
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-mark">02</div>
+            <div>
+              <h3 data-i18n="why.inspection">Независимый осмотр до покупки</h3>
+              <p data-i18n="why.inspectionText"
+                >Технический эксперт проверяет автомобиль на месте и присылает
+                отчёт до того, как деньги уходят продавцу.</p
+              >
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-mark">03</div>
+            <div>
+              <h3 data-i18n="why.costs">Прозрачный расчёт</h3>
+              <p data-i18n="why.costsText"
+                >Автомобиль, перевозка, оформление и услуги — согласовываем
+                состав расходов до покупки.</p
+              >
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-mark">04</div>
+            <div>
+              <h3 data-i18n="why.support">Сопровождение на всём пути</h3>
+              <p data-i18n="why.supportText"
+                >Сопровождаем заказ от согласования автомобиля до перевозки,
+                оформления и передачи ключей.</p
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       ВОПРОСЫ И ОТВЕТЫ
+       ========================================================= -->
+    <section class="faq section-pad" id="faq"
+      ><div class="wrap faq-grid"
+        ><div
+          ><div class="eyebrow" data-i18n="faq.eyebrow">ВОПРОСЫ И ОТВЕТЫ</div
+          ><h2 data-i18n-html="faq.title">Перед тем,<br />как заказать.</h2
+          ><p data-i18n="faq.description"
+            >В форме ниже можно описать свой запрос и задать дополнительные
+            вопросы.</p
+          ></div
+        ><div
+          ><details
+            ><summary data-i18n="faq.originsQuestion"
+              >Из каких стран можно привезти автомобиль?</summary
+            ><p data-i18n="faq.originsAnswer"
+              >Подбираем и доставляем автомобили из Южной Кореи, ОАЭ (Дубая),
+              Китая, Японии и США. Страну покупки выбираем вместе с вами с
+              учётом модели, бюджета и доступных предложений.</p
+            ></details
+          ><details
+            ><summary data-i18n="faq.costQuestion"
+              >Из чего складывается стоимость?</summary
+            ><p data-i18n="faq.costAnswer"
+              >Из цены автомобиля, проверки и выкупа, перевозки, таможенного
+              оформления и согласованных услуг. Итоговый расчёт зависит от
+              автомобиля, страны покупки, маршрута и места доставки.</p
+            ></details
+          ><details
+            ><summary data-i18n="faq.inspectionQuestion"
+              >Как проверяется автомобиль?</summary
+            ><p data-i18n="faq.inspectionAnswer"
+              >До покупки согласовываем осмотр и отчёт: состояние кузова,
+              салона, агрегатов и доступная история. Решение о выкупе
+              принимается после вашего подтверждения.</p
+            ></details
+          ><details
+            ><summary data-i18n="faq.timeQuestion"
+              >Сколько занимает доставка?</summary
+            ><p data-i18n="faq.timeAnswer"
+              >Срок зависит от маршрута, графика перевозчика и оформления
+              документов. Его уточняем при расчёте конкретного заказа и
+              согласовываем до покупки.</p
+            ></details
+          ><details
+            ><summary data-i18n="faq.modelQuestion"
+              >Можно заказать конкретную модель?</summary
+            ><p data-i18n="faq.modelAnswer"
+              >Да. Укажите марку, модель, желаемый год, комплектацию и
+              бюджет.</p
+            ></details
+          ><details
+            ><summary data-i18n="faq.requestQuestion"
+              >Как отправить заявку?</summary
+            ><p data-i18n="faq.requestAnswer"
+              >Заполните форму ниже: сайт подготовит текст для WhatsApp.
+              Проверьте его и нажмите «Отправить» в мессенджере.</p
+            ></details
+          ></div
+        ></div
+      ></section
+    >
+
+    <!-- =========================================================
+       КОНТАКТЫ И ФОРМА ЗАЯВКИ
+       ========================================================= -->
+    <section class="contact section-pad" id="contact">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div>
+            <div class="eyebrow" data-i18n="contact.eyebrow"
+              >ОБСУДИМ ВАШ ЗАПРОС</div
+            ><h2 data-i18n-html="contact.title"
+              >Ваш следующий<br />автомобиль<br />начинается здесь.</h2
+            >
+            <p class="lead" data-i18n="contact.description">
+              Расскажите, какой автомобиль ищете. Учтём модель, бюджет, страну
+              покупки и страну доставки.
+            </p>
+
+            <!-- адресс и номер Айдос -->
+            <div class="contact-info">
+              <div>
+                <div class="lbl" data-i18n="phone">Телефон</div>
+                <div class="val"
+                  ><a href="tel:+77778880096">+7 (777) 888-00-96</a></div
+                >
+              </div>
+              <div>
+                <div class="lbl" data-i18n="contact.hoursLabel"
+                  >Часы работы</div
+                >
+                <div class="val" data-i18n="contact.hours">24/7</div>
+              </div>
+              <div class="contact-instagram">
+                <div class="lbl">Instagram</div>
+                <div class="val"
+                  ><a
+                    href="https://www.instagram.com/isaev_motors_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram isaev_motors_ — откроется в новой вкладке"
+                    data-i18n-aria-label="a11y.instagram"
+                    >@isaev_motors_ <span aria-hidden="true">↗</span></a
+                  ></div
+                >
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form id="leadForm" aria-describedby="formIntro">
+              <h3 class="form-title" data-i18n="form.title"
+                >Начнём с консультации</h3
+              >
+              <p class="form-intro" id="formIntro" data-i18n="form.intro"
+                >Оставьте имя и телефон. Пожелания к автомобилю можно добавить
+                по желанию.</p
+              >
+              <div class="form-row">
+                <div class="field"
+                  ><label for="fname" data-i18n="name">Имя</label
+                  ><input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    autocomplete="given-name"
+                    maxlength="80"
+                    placeholder="Ваше имя"
+                    required
+                    data-i18n-placeholder="form.namePlaceholder"
+                /></div>
+                <div class="field"
+                  ><label for="fphone" data-i18n="phone">Телефон</label
+                  ><div class="phone-input"
+                    ><span class="phone-prefix" aria-hidden="true">+7</span
+                    ><input
+                      type="tel"
+                      id="fphone"
+                      name="fphone"
+                      autocomplete="tel-national"
+                      inputmode="numeric"
+                      minlength="10"
+                      maxlength="10"
+                      pattern="[0-9]{10}"
+                      placeholder="7778880096"
+                      aria-describedby="phoneHint"
+                      title="Введите 10 цифр после +7"
+                      required
+                      data-i18n-title="form.phoneTitle" /></div
+                  ><small
+                    class="phone-hint"
+                    id="phoneHint"
+                    data-i18n="form.phoneHint"
+                    >10 цифр после +7</small
+                  ></div
+                >
+              </div>
+              <details class="form-details"
+                ><summary
+                  ><span data-i18n="form.wishes">Добавить пожелания</span>
+                  <span data-i18n="form.optional">необязательно</span></summary
+                ><div class="optional-fields">
+                  <div class="field full field-car"
+                    ><label for="fcar" data-i18n="form.carLabel"
+                      >Какой автомобиль интересует</label
+                    ><input
+                      type="text"
+                      id="fcar"
+                      name="fcar"
+                      maxlength="250"
+                      placeholder="Марка, модель или пожелания"
+                      data-i18n-placeholder="form.carPlaceholder"
+                  /></div>
+                  <div class="form-row"
+                    ><div class="field"
+                      ><label for="forigin" data-i18n="form.origin"
+                        >Откуда привезти</label
+                      ><select id="forigin" name="origin"
+                        ><option value="" data-i18n="form.originUndecided"
+                          >Пока не определился</option
+                        ><option value="Южная Корея" data-i18n="country.korea"
+                          >Корея</option
+                        ><option value="ОАЭ (Дубай)" data-i18n="country.dubai"
+                          >ОАЭ (Дубай)</option
+                        ><option value="Китай" data-i18n="country.china"
+                          >Китай</option
+                        ><option value="Япония" data-i18n="country.japan"
+                          >Япония</option
+                        ><option value="США" data-i18n="country.usa"
+                          >США</option
+                        ></select
+                      ></div
+                    ><div class="field"
+                      ><label for="fcountry" data-i18n="form.destination"
+                        >Куда доставить</label
+                      ><select id="fcountry" name="country"
+                        ><option value="" data-i18n="form.destinationUndecided"
+                          >Обсудим</option
+                        ><option
+                          value="Казахстан"
+                          data-i18n="country.kazakhstan"
+                          >Казахстан</option
+                        ><option value="Россия" data-i18n="country.russia"
+                          >Россия</option
+                        ></select
+                      ></div
+                    ></div
+                  >
+                  <div class="field full"
+                    ><label for="fbudget" data-i18n="budget">Бюджет</label
+                    ><input
+                      id="fbudget"
+                      name="budget"
+                      maxlength="80"
+                      placeholder="Сумма и валюта, если определились"
+                      data-i18n-placeholder="form.budgetPlaceholder"
+                  /></div> </div
+              ></details>
+              <button type="submit" class="submit-btn" data-i18n="form.submit"
+                >Продолжить в WhatsApp ↗</button
+              >
+              <div class="form-note" data-i18n="form.note"
+                >Откроется WhatsApp с текстом заявки. Проверьте сообщение и
+                нажмите «Отправить».</div
+              >
+              <div
+                class="form-success"
+                id="formSuccess"
+                role="status"
+                aria-live="polite"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       ПОДВАЛ
+       ========================================================= -->
+    <footer>
+      <div class="foot-wrap">
+        <div
+          >© <span id="year"></span>
+          <span data-i18n="footer.copy"
+            >IsaevMotors. Работаем добросовестно и прозрачно.</span
+          ></div
+        >
+      </div>
+    </footer>
+
+    <!-- =========================================================
+       ПЛАВАЮЩАЯ КНОПКА WHATSAPP
+       ========================================================= -->
+    <a
+      class="fab"
+      href="https://wa.me/77778880096"
+      target="_blank"
+      rel="noopener"
+      aria-label="Написать в WhatsApp"
+      data-i18n-aria-label="a11y.whatsapp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.71.45 3.38 1.3 4.85L2 22l5.36-1.4a9.9 9.9 0 0 0 4.68 1.19h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.15 8.15 0 0 1-4.14-1.12l-.3-.17-3.18.83.85-3.1-.19-.32a8.06 8.06 0 0 1-1.24-4.32c0-4.48 3.65-8.03 8.21-8.03m-4.5 4.6c-.15 0-.4.06-.6.29-.21.24-.8.77-.8 1.88 0 1.11.81 2.18.93 2.33.11.15 1.6 2.48 3.94 3.37 1.95.75 2.34.6 2.77.56.42-.04 1.35-.55 1.54-1.08.19-.53.19-.98.13-1.08-.06-.09-.21-.15-.44-.26s-1.35-.67-1.56-.74c-.21-.08-.36-.12-.51.12-.15.24-.59.75-.72.9-.13.15-.27.17-.5.06-.24-.12-1-.37-1.9-1.17-.7-.63-1.18-1.4-1.31-1.64-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.11-.14.15-.25.23-.4.08-.16.04-.3-.02-.42-.06-.12-.51-1.28-.72-1.75-.18-.44-.37-.4-.51-.4h-.44z"
+        />
+      </svg>
+    </a>
+
+    <!-- =========================================================
+       МОБИЛЬНАЯ ПАНЕЛЬ ДЕЙСТВИЙ
+       ========================================================= -->
+    <nav
+      class="mobile-action-bar"
+      id="mobileActions"
+      aria-label="Быстрые действия"
+      data-i18n-aria-label="a11y.actions"
+      ><a class="mobile-action-calc" href="#contact"
+        ><span data-i18n="action.estimateShort">Рассчитать</span>
+        <span aria-hidden="true">↗</span></a
+      ><a
+        class="mobile-action-whatsapp"
+        href="https://wa.me/77778880096"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path
+            d="M20.4 11.7a8.4 8.4 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.4 8.4 0 1 1 20.4 11.7Z"
+            stroke="currentColor"
+            stroke-width="1.6"
+          />
+          <path
+            d="m8.3 7.8 1.2 2.1-.8 1a8 8 0 0 0 4.1 4.1l1-.8 2.1 1.2c-.4 1.1-1 1.5-1.8 1.5-3.5-.2-7.4-4.1-7.6-7.6 0-.8.4-1.4 1.8-1.5Z"
+            fill="currentColor"
+          /></svg
+        >WhatsApp</a
+      ></nav
+    >
+
+    <!-- =========================================================
+       СКРИПТЫ СТРАНИЦЫ
+       ========================================================= -->
+    <script src="script.js"></script>
+    <script src="instagram.js"></script>
+  </body>
+</html>

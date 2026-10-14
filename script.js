@@ -3,7 +3,7 @@ const TRANSLATIONS = {
   ru: {
     "deliveries.reel": "Видео доставки",
     "deliveries.reelSoon": "Скоро здесь появится видео выдачи автомобиля",
-    "deliveries.openReel": "Смотреть в Instagram ↗",
+    "deliveries.openReel": "Смотреть в Instagram",
     "page.title":
       "IsaevMotors — доставка авто из Кореи, Дубая, Китая, Японии и США",
     "page.description":
@@ -156,14 +156,14 @@ const TRANSLATIONS = {
     "form.destinationUndecided": "Обсудим",
     budget: "Бюджет",
     "form.budgetPlaceholder": "Сумма и валюта, если определились",
-    "form.submit": "Продолжить в WhatsApp ↗",
+    "form.submit": "Продолжить в WhatsApp",
     "form.note":
       "Откроется WhatsApp с текстом заявки. Проверьте сообщение и нажмите «Отправить».",
     "form.nameError": "Введите ваше имя.",
     "form.phoneError": "Введите 10 цифр после +7. Например: 7778880096.",
     "form.ready":
       "Текст заявки готов. Проверьте и отправьте сообщение в WhatsApp. ",
-    "form.openMessage": "Открыть сообщение в WhatsApp →",
+    "form.openMessage": "Открыть сообщение в WhatsApp",
     "message.greeting":
       "Здравствуйте, IsaevMotors! Хочу обсудить подбор и доставку автомобиля.",
     "message.car": "Автомобиль",
@@ -188,7 +188,7 @@ const TRANSLATIONS = {
   kk: {
     "deliveries.reel": "Жеткізу видеосы",
     "deliveries.reelSoon": "Жақында автокөлікті тапсыру видеосы жарияланады",
-    "deliveries.openReel": "Instagram-да көру ↗",
+    "deliveries.openReel": "Instagram-да көру",
     "page.title":
       "IsaevMotors — Корея, Дубай, Қытай, Жапония және АҚШ-тан автокөлік жеткізу",
     "page.description":
@@ -342,14 +342,14 @@ const TRANSLATIONS = {
     "form.destinationUndecided": "Талқылаймыз",
     budget: "Бюджет",
     "form.budgetPlaceholder": "Сома мен валюта, егер анық болса",
-    "form.submit": "WhatsApp-та жалғастыру ↗",
+    "form.submit": "WhatsApp-та жалғастыру",
     "form.note":
       "Өтінім мәтінімен WhatsApp ашылады. Хабарламаны тексеріп, «Жіберу» батырмасын басыңыз.",
     "form.nameError": "Атыңызды енгізіңіз.",
     "form.phoneError": "+7-ден кейін 10 цифр енгізіңіз. Мысалы: 7778880096.",
     "form.ready":
       "Өтінім мәтіні дайын. Хабарламаны тексеріп, WhatsApp-та жіберіңіз. ",
-    "form.openMessage": "Хабарламаны WhatsApp-та ашу →",
+    "form.openMessage": "Хабарламаны WhatsApp-та ашу",
     "message.greeting":
       "Сәлеметсіз бе, IsaevMotors! Автокөлік таңдау және жеткізу туралы кеңес алғым келеді.",
     "message.car": "Автокөлік",
@@ -374,7 +374,7 @@ const TRANSLATIONS = {
   en: {
     "deliveries.reel": "Delivery video",
     "deliveries.reelSoon": "A handover video is coming soon",
-    "deliveries.openReel": "Watch on Instagram ↗",
+    "deliveries.openReel": "Watch on Instagram",
     "page.title":
       "IsaevMotors — car imports from Korea, Dubai, China, Japan and the USA",
     "page.description":
@@ -527,14 +527,14 @@ const TRANSLATIONS = {
     "form.destinationUndecided": "Let’s discuss",
     budget: "Budget",
     "form.budgetPlaceholder": "Amount and currency, if known",
-    "form.submit": "Continue in WhatsApp ↗",
+    "form.submit": "Continue in WhatsApp",
     "form.note":
       "WhatsApp will open with your enquiry. Review the message and tap Send.",
     "form.nameError": "Please enter your name.",
     "form.phoneError": "Enter 10 digits after +7. For example: 7778880096.",
     "form.ready":
       "Your enquiry is ready. Review and send the message in WhatsApp. ",
-    "form.openMessage": "Open message in WhatsApp →",
+    "form.openMessage": "Open message in WhatsApp",
     "message.greeting":
       "Hello, IsaevMotors! I would like to discuss sourcing and delivering a car.",
     "message.car": "Car",

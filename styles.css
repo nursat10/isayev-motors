@@ -2758,3 +2758,56 @@ header {
     padding-top: 16px;
   }
 }
+/* Стрелки рисуются SVG-маской: символы ↗ → ← на телефонах заменяются эмодзи
+   или глифами из запасного шрифта. */
+.arrow-ne,
+.arrow-e,
+.arrow-w,
+.delivery-reel-link::after,
+.submit-btn::after,
+#formSuccess a::after {
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: -0.22em;
+  background-color: currentColor;
+  -webkit-mask: var(--arrow) center / contain no-repeat;
+  mask: var(--arrow) center / contain no-repeat;
+  transition: transform 0.2s;
+}
+.arrow-ne,
+.delivery-reel-link::after,
+.submit-btn::after {
+  --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7M8.5 7H17v8.5'/%3E%3C/svg%3E");
+}
+.arrow-e,
+.arrow-w,
+#formSuccess a::after {
+  --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E");
+}
+.arrow-w {
+  transform: scaleX(-1);
+}
+.delivery-reel-link::after,
+.submit-btn::after,
+#formSuccess a::after {
+  margin-left: 0.45em;
+}
+.btn-primary,
+.mobile-action-calc {
+  gap: 10px;
+}
+.delivery-control {
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+@media (hover: hover) {
+  .btn-primary:hover .arrow-ne,
+  .delivery-reel-link:hover::after,
+  .submit-btn:hover::after {
+    transform: translate(2px, -2px);
+  }
+}
